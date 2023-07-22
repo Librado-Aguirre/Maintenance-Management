@@ -1,42 +1,121 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    margin-left: 1.5em;
-    text-align: justify;
-  }
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: lightblue;
+  align-items: center;
+  width: auto;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  background-color: lightskyblue;
+  flex: 1;
+  padding:16px;
+  width: 980px;
+}
+
+h1 {
+
+}
+
+h2 {
+  font-size: 18px;
+  margin-top: 1em;
+  text-indent: 24px;
+}
+
+p {
+  display: flex;
+  margin-bottom: 1em;
+  margin-left: 24px;
+  text-align:justify;
+}
+
+ul {
+  list-style-type:square;
+  margin-left: 0;
+}
+
+li {
+
   
-  h1 {
-    font-size: 2em;
-    margin-top: 0;
-  }
-  
-  p {
-    font-size: 1em;
-    margin-bottom: 0em;
-    margin: 0em;
-  }
-  
-  ul {
-    list-style:circle ;
-    margin: 1.5;
-    padding: 0;
-  }
-  
-  li {
-    margin-bottom: 1.5em;
-  }
-  
-  table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  th, td {
-    border: 1px solid black;
-    padding: 5px;
-  }
-  
-  th {
-    text-align: left;
-  }
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.navigation {
+display: flex;
+border-style: solid;
+border-color: #000;
+background-color: aliceblue;
+
+}
+
+.navigation li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.title {
+  display: flex;
+  padding: 16px;
+  align-items: center;
+  background-color:rgb(3, 3, 126);
+  color: #fff;
+  font-weight: 900;
+  font-size: 24px;
+  margin-top: 0;
+ 
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.table-container {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 24px;
+  background-color: aliceblue;
+}
+
+#maintenance-strategies {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#maintenance-strategies {
+  background-color:aliceblue;
+  text-align: center;
+  border-color: rgb(3, 3, 126);
+  border-style: solid;
+}
+
+#maintenance-strategies tbody tr td {
+  padding: 5px;
+}
+.footer {
+  position: fixed
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eee;
+  width: 980px;
+}
